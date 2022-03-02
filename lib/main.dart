@@ -11,15 +11,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light.copyWith(
-      statusBarColor: Colors.white
-    ));
+    SystemChrome.setSystemUIOverlayStyle( SystemUiOverlayStyle.light.copyWith(
+      statusBarColor: Colors.transparent
+));
 
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Diseños',
-      initialRoute: 'botones',
+      initialRoute: 'basico',
       routes: {
         'basico' : (BuildContext context) => BasicoPage(),
         'scroll' : (BuildContext context) => ScrollPage(),
